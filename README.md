@@ -5,6 +5,8 @@
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
+![Dashboard screenshot](./screenshots/image.png)
+
 This project is a web application developed in React and Next.js that allows users to manage and visualize sales data.
 
 ### Technologies Used
