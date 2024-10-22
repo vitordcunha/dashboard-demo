@@ -2,9 +2,8 @@ import { BentoGrid } from "@/_components/ui/bento-grid";
 
 import Overview from "./_components/overview";
 import Revenue from "./_components/revenue";
-import { SalesByChanel, SalesByProduct } from "./_components/sales";
-
 import SalesTable from "./_components/sales-table";
+import { SalesByChanel, SalesByProduct } from "./_components/sales";
 
 export default function SalesDashboard() {
   return (
