@@ -7,6 +7,8 @@
 
 ![Dashboard screenshot](./screenshots/image.png)
 
+Live DEMO: https://dashboard-demo-ghk8iqqvs-vitor852s-projects.vercel.app
+
 This project is a web application developed in React and Next.js that allows users to manage and visualize sales data.
 
 ### Technologies Used
