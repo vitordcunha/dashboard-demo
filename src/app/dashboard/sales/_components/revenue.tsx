@@ -25,7 +25,7 @@ async function Revenue(): Promise<JSX.Element> {
     <Card className="row-span-2 col-span-2">
       <CardHeader>
         <CardTitle>Historico de receita</CardTitle>
-        <CardDescription>Receita nos ultimos 12 meses</CardDescription>
+        <CardDescription>Receita nos ultimos 6 meses</CardDescription>
       </CardHeader>
 
       <CardContent>

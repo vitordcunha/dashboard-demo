@@ -37,12 +37,12 @@ export interface Sale {
 export const columns: ColumnDef<Sale>[] = [
   {
     accessorKey: "id",
-    header: "NO",
+    header: "id",
     cell: ({ cell }) => <div>#{cell.getValue() as number}</div>,
   },
   {
     accessorKey: "customer.name",
-    header: "client name",
+    header: "nome do cliente",
     cell: ({ cell }) => <div>{cell.getValue() as string}</div>,
   },
   {

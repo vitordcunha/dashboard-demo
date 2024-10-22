@@ -57,39 +57,47 @@ async function Overview(): Promise<JSX.Element> {
     }
   }
 
-  const items = [
+  // Define the KPI cards and their associated formatting options.
+  const cards = [
     {
       key: "revenue",
       title: "Receita total",
+      description: "Receita nos ultimos 6 meses",
       format: "currency",
     },
     {
       key: "expenses",
       title: "Despesas",
+      description: "Despesas nos ultimos 6 meses",
       format: "currency",
     },
     {
       key: "sales",
       title: "Número de vendas",
+      description: "Vendas nos ultimos 6 meses",
     },
     {
       key: "clients",
       title: "Clientes",
+      description: "Novos clientes nos ultimos 6 meses",
     },
   ];
 
   return (
     <>
-      {items.map((kpi) => (
-        <Card key={kpi.key}>
+      {cards.map((card) => (
+        <Card key={card.key}>
           <CardHeader>
-            <CardTitle>{kpi.title}</CardTitle>
-            <CardDescription>Receita nos ultimos 6 meses</CardDescription>
+            <CardTitle>{card.title}</CardTitle>
+            <CardDescription>{card.description}</CardDescription>
           </CardHeader>
 
           <CardContent>
             <CardTitle className="text-2xl">
-              {formatValue(getTotal(kpi.key as keyof OverviewData), kpi.format)}
+              {formatValue(
+                getTotal(card.key as keyof OverviewData),
+                card.format
+              )}
             </CardTitle>
           </CardContent>
         </Card>
