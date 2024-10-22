@@ -22,9 +22,9 @@ export type OverviewData = {
  * such as revenue, expenses, sales, and number of clients. It calculates totals
  * for each KPI and formats the values appropriately.
  *
- * @returns {JSX.Element} A React fragment containing Card components for each KPI.
+ * @returns {Promise<JSX.Element>} A React fragment containing Card components for each KPI.
  */
-async function Overview() {
+async function Overview(): Promise<JSX.Element> {
   const data = await getOverviewData();
 
   /**
@@ -57,7 +57,7 @@ async function Overview() {
     }
   }
 
-  const kpis = [
+  const items = [
     {
       key: "revenue",
       title: "Receita total",
@@ -80,7 +80,7 @@ async function Overview() {
 
   return (
     <>
-      {kpis.map((kpi) => (
+      {items.map((kpi) => (
         <Card key={kpi.key}>
           <CardHeader>
             <CardTitle>{kpi.title}</CardTitle>
